@@ -28,6 +28,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
+          className="order-last lg:order-first"
         >
           <div
             className="text-xs tracking-widest uppercase mb-5"
@@ -161,35 +162,34 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="relative hidden lg:flex items-center justify-center h-[480px]"
+          className="relative flex items-center justify-center h-[320px] lg:h-[480px] order-first lg:order-last"
         >
           <div
-            className="absolute inset-0 rounded-2xl"
+            className="absolute inset-0 rounded-2xl hidden lg:block"
             style={{
               background: "linear-gradient(135deg, #EFF6FF 0%, #F0FDF4 100%)",
             }}
           />
-          <div className="relative flex items-center justify-center w-full h-full p-8">
+          <div className="relative flex items-center justify-center w-full h-full lg:p-8">
             <div
-              className="relative overflow-hidden"
+              className="relative overflow-hidden rounded-full lg:rounded-[1.25rem] w-[260px] h-[260px] lg:w-[320px] lg:h-[400px]"
               style={{
-                width: 320,
-                height: 400,
-                borderRadius: "1.25rem",
                 border: "3px solid rgba(30,64,175,0.12)",
                 boxShadow:
                   "0 20px 60px rgba(15,23,42,0.12), 0 4px 16px rgba(30,64,175,0.08)",
               }}
             >
               <ImageWithFallback
+                src="/mobilwprofileimage.png"
+                alt="Bhagwant Singh"
+                className="block lg:hidden"
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
+              />
+              <ImageWithFallback
                 src="/profileimage.png"
                 alt="Bhagwant Singh"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  objectPosition: "center top",
-                }}
+                className="hidden lg:block"
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
               />
             </div>
           </div>
