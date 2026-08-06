@@ -2,23 +2,19 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 
 const activities = [
-  { year: "2024", role: "Program Committee Member", org: "IEEE S&P Workshop on AI Security", type: "Program Committee" },
-  { year: "2024", role: "Reviewer", org: "ACM Computing Surveys", type: "Journal Reviewer" },
-  { year: "2023", role: "Reviewer", org: "IEEE Transactions on Information Forensics and Security", type: "Journal Reviewer" },
-  { year: "2023", role: "Reviewer", org: "Computers & Security, Elsevier", type: "Journal Reviewer" },
-  { year: "2023", role: "Session Chair", org: "International Conference on Cybersecurity and Privacy", type: "Conference" },
-  { year: "2022", role: "Reviewer", org: "ACL Rolling Review", type: "Conference Reviewer" },
-  { year: "2022", role: "Reviewer", org: "EMNLP 2022", type: "Conference Reviewer" },
-  { year: "2022", role: "Invited Reviewer", org: "Expert Systems with Applications, Elsevier", type: "Journal Reviewer" },
-  { year: "2021", role: "Reviewer", org: "NAACL 2021", type: "Conference Reviewer" },
-  { year: "2021", role: "Reviewer", org: "IEEE Access", type: "Journal Reviewer" },
+  { year: "2026", role: "Reviewer", org: "Journal of Information Security and Applications, Elsevier", type: "Journal Reviewer" },
+  { year: "2026", role: "Reviewer", org: "Current Psychology, Springer Nature", type: "Journal Reviewer" },
+  { year: "2025", role: "Expert Speaker — Cyber Security Workshop", org: "Sri Venkateswara College of Engineering, Tirupati", type: "Invited Talk" },
+  { year: "2025", role: "Technical Expert — National Workshop on Cyber Security", org: "National Institute of Technology Meghalaya", type: "Invited Talk" },
+  { year: "2025", role: "Participant, Research & Skill Development Programme on AI in Cyber Security and Forensic Science", org: "National Forensic Sciences University, Goa Campus (Ministry of Home Affairs)", type: "Professional Development" },
+  { year: "2023", role: "Organising Member — National Seminar on Role of Robots in Smart Agriculture", org: "Departmental Seminar Committee", type: "Departmental Service" },
 ];
 
 const typeColors: Record<string, { bg: string; text: string }> = {
-  "Program Committee": { bg: "#EFF6FF", text: "#1E40AF" },
-  "Journal Reviewer": { bg: "#F0FDFA", text: "#0F766E" },
-  "Conference": { bg: "#F5F3FF", text: "#7C3AED" },
-  "Conference Reviewer": { bg: "#FFF7ED", text: "#C2410C" },
+  "Journal Reviewer": { bg: "#EFF6FF", text: "#1E40AF" },
+  "Invited Talk": { bg: "#F0FDFA", text: "#0F766E" },
+  "Professional Development": { bg: "#F5F3FF", text: "#7C3AED" },
+  "Departmental Service": { bg: "#FFF7ED", text: "#C2410C" },
 };
 
 function useInView(ref: React.RefObject<Element>) {

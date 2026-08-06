@@ -5,33 +5,23 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 const projects = [
   {
     id: "01",
-    title: "AI-Driven Malware Detection Framework",
+    title: "AI-Based Malware Detection Framework",
     category: "Cybersecurity · Explainable AI",
     abstract:
-      "A hybrid static-dynamic analysis framework leveraging deep neural networks and explainable AI techniques to classify and explain malware behaviour at scale. The system generates human-readable threat reports, enabling security analysts to act on AI-driven intelligence with full transparency and auditability.",
-    tags: ["Deep Learning", "XAI", "Malware", "SHAP"],
+      "A hybrid machine-learning framework for malware classification integrating static and dynamic feature representations with explainable AI methods. The project examines feature optimisation, model interpretability, adversarial resilience and cross-dataset generalisation, using EMBER2018, EMBER2024, CIC malware datasets, VirusShare, MalwareBazaar and DREBIN-related data — aiming for models that are accurate, interpretable and deployable in practical security environments.",
+    tags: ["Machine Learning", "Explainable AI", "Feature Optimisation", "Adversarial Resilience"],
     color: "#1E40AF",
     bgColor: "#EFF6FF",
   },
   {
     id: "02",
-    title: "Multilingual NLP Platform",
-    category: "Natural Language Processing · Language Technologies",
+    title: "Multilingual NLP Shallow-Parsing System",
+    category: "Multilingual NLP · MeitY BHASHINI",
     abstract:
-      "A comprehensive platform for developing and benchmarking multilingual transformer models across low-resource languages. Includes annotated corpora, multi-task learning pipelines, and cross-lingual transfer mechanisms designed to bridge the AI language gap for underrepresented linguistic communities.",
-    tags: ["Transformers", "BERT", "Low-resource NLP", "Multi-task"],
+      "Multi-task transformer models designed for shallow parsing across more than ten low-resource Indian languages under the MeitY-funded BHASHINI initiative. XLM-RoBERTa and MuRIL architectures were used for part-of-speech tagging, chunking, morphological analysis, root identification, category classification, named-entity recognition, tense-aspect-modality extraction and Vibhakti detection, with FastAPI-based internal deployment.",
+    tags: ["XLM-RoBERTa", "MuRIL", "FastAPI", "10+ Indian Languages"],
     color: "#0F766E",
     bgColor: "#F0FDFA",
-  },
-  {
-    id: "03",
-    title: "Adversarial AI & Security Analytics",
-    category: "Adversarial Machine Learning · Security",
-    abstract:
-      "An investigation into adversarial vulnerabilities of AI security models and the development of robust defence mechanisms. This research establishes formal frameworks for evaluating and improving the resilience of machine learning systems deployed in adversarial cybersecurity environments.",
-    tags: ["Adversarial ML", "Robustness", "Attack Defence", "Security"],
-    color: "#7C3AED",
-    bgColor: "#F5F3FF",
   },
 ];
 

@@ -4,33 +4,33 @@ import { motion } from "motion/react";
 const themes = [
   {
     num: "01",
-    title: "Foundation Models for Cybersecurity",
-    desc: "Developing large-scale pre-trained models specifically adapted for security intelligence, threat detection, and vulnerability analysis.",
+    title: "Interpretable Deep Learning for Malware Analysis",
+    desc: "Developing deep-learning architectures for malware analysis that remain transparent and interpretable to security analysts.",
   },
   {
     num: "02",
-    title: "Privacy-Preserving AI",
-    desc: "Federated learning and differential privacy techniques enabling collaborative security research without exposing sensitive organisational data.",
+    title: "Adversarially Robust Malware Detection",
+    desc: "Building malware-detection systems that stay reliable under evasion attacks and adversarial perturbation.",
   },
   {
     num: "03",
-    title: "AI Governance & Policy",
-    desc: "Contributing to international frameworks for responsible AI deployment in critical security infrastructure and government systems.",
+    title: "Cross-Dataset Malware Generalisation",
+    desc: "Improving cross-dataset and cross-domain generalisation of malware-classification models across diverse threat landscapes.",
   },
   {
     num: "04",
-    title: "Neurosymbolic Security Systems",
-    desc: "Combining neural pattern recognition with symbolic reasoning to create more interpretable and reliable automated threat analysis.",
+    title: "Explainable Feature Attribution",
+    desc: "Designing explainable feature-attribution methods that give security analysts transparent, actionable detection insights.",
   },
   {
     num: "05",
-    title: "Global NLP for Security",
-    desc: "Expanding multilingual security analytics to cover 50+ languages, enabling coordinated cyber threat intelligence across borders.",
+    title: "Multilingual NLP for Cyber-Threat Intelligence",
+    desc: "Extending security analytics to low-resource languages, applying multilingual NLP to cyber-threat intelligence.",
   },
   {
     num: "06",
-    title: "Human-AI Collaboration",
-    desc: "Designing AI-assisted security analyst workflows where humans and intelligent systems complement each other's strengths in real-time threat response.",
+    title: "Privacy-Preserving Security Learning",
+    desc: "Investigating privacy-preserving and collaborative learning techniques for trustworthy, uncertainty-aware cybersecurity models.",
   },
 ];
 
@@ -80,7 +80,7 @@ export function FutureResearch() {
             className="mt-5 max-w-xl"
             style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", color: "#94A3B8", lineHeight: 1.75 }}
           >
-            The next phase of research focuses on expanding the scope and impact of trustworthy AI — from foundation models for security to globally inclusive language technologies.
+            Future work will extend interpretable deep learning, adversarial robustness, and multilingual security analytics — pursued through funding from MeitY, the Anusandhan National Research Foundation, the Department of Science and Technology, and other national research agencies.
           </p>
         </motion.div>
 

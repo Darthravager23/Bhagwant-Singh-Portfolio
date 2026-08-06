@@ -5,26 +5,26 @@ import { Mail, ExternalLink } from "lucide-react";
 const links = [
   {
     label: "Email",
-    value: "bhagwant.singh@research.ac",
-    href: "mailto:bhagwant.singh@research.ac",
+    value: "Bhagwantsinghresearch@gmail.com",
+    href: "mailto:Bhagwantsinghresearch@gmail.com",
     icon: Mail,
   },
   {
     label: "ORCID",
-    value: "0000-0002-XXXX-XXXX",
-    href: "https://orcid.org",
+    value: "0000-0003-1641-4278",
+    href: "https://orcid.org/0000-0003-1641-4278",
     icon: ExternalLink,
   },
   {
-    label: "Scopus",
-    value: "Author Profile",
-    href: "https://scopus.com",
+    label: "LinkedIn",
+    value: "Connect on LinkedIn",
+    href: "https://www.linkedin.com/in/bhagwant-singh-80baa0374/",
     icon: ExternalLink,
   },
   {
     label: "Google Scholar",
     value: "Scholar Profile",
-    href: "https://scholar.google.com",
+    href: "https://scholar.google.com/citations?user=hhhBoXAAAAAJ",
     icon: ExternalLink,
   },
 ];
@@ -75,7 +75,7 @@ export function Contact() {
             className="mb-12"
             style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", color: "#64748B", lineHeight: 1.75 }}
           >
-            I welcome collaboration opportunities with academic institutions, government research labs, and industry partners working on AI, cybersecurity, and language technology challenges.
+            I welcome academic communication concerning research collaboration, peer review, cybersecurity, malware detection, explainable AI, multilingual NLP, invited talks, workshops, and institutional projects.
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
@@ -109,7 +109,7 @@ export function Contact() {
               fontSize: "0.95rem",
               letterSpacing: "0.01em",
             }}
-            onClick={() => window.open("mailto:bhagwant.singh@research.ac")}
+            onClick={() => window.open("mailto:Bhagwantsinghresearch@gmail.com")}
           >
             Start Collaboration
             <Mail size={16} />
@@ -128,12 +128,12 @@ export function Contact() {
           <div
             style={{ fontFamily: "Inter, sans-serif", fontSize: "0.78rem", color: "#94A3B8" }}
           >
-            Research · Publications · AI · Cybersecurity
+            Advancing interpretable AI for cybersecurity and multilingual language technologies
           </div>
           <div
             style={{ fontFamily: "Inter, sans-serif", fontSize: "0.75rem", color: "#CBD5E1" }}
           >
-            © 2024 All rights reserved
+            © 2026 Bhagwant Singh. All rights reserved.
           </div>
         </div>
       </div>

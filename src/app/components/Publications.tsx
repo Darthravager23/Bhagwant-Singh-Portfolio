@@ -2,66 +2,148 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { Search, ExternalLink } from "lucide-react";
 
+const SCHOLAR_URL = "https://scholar.google.com/citations?user=hhhBoXAAAAAJ";
+
 const publications = [
   {
-    title: "Explainable AI for Malware Detection: A Comprehensive Survey and Taxonomy",
-    venue: "IEEE Transactions on Information Forensics and Security",
+    title: "Emerging Trends in AI-Powered Malware Detection: A Review of Real-Time and Adversarially Resilient Techniques",
+    venue: "Tuijin Jishu / Journal of Propulsion Technology, 45(4), 1841–1869",
     year: 2024,
-    tags: ["XAI", "Malware", "Survey"],
-    category: "Cybersecurity",
+    tags: ["Malware Detection", "Survey", "Adversarial ML"],
+    category: "Journal",
+    link: SCHOLAR_URL,
   },
   {
-    title: "Hybrid Static-Dynamic Analysis for Ransomware Classification Using Deep Neural Networks",
-    venue: "IEEE Access",
-    year: 2023,
-    tags: ["Ransomware", "Deep Learning", "Cybersecurity"],
-    category: "Cybersecurity",
+    title: "Psychology in Cybersecurity: Unveiling the Human Dimensions of Digital Resilience",
+    venue: "International Journal of Advanced Networking and Applications, 16(1), 6281–6290",
+    year: 2024,
+    tags: ["Cyber Psychology", "Human Factors"],
+    category: "Journal",
+    link: "https://doi.org/10.35444/IJANA.2024.16107",
   },
   {
-    title: "Adversarial Robustness in Malware Detection: Attacks, Defences and Evaluation Frameworks",
-    venue: "Computers & Security, Elsevier",
-    year: 2023,
-    tags: ["Adversarial ML", "Robustness", "Malware"],
-    category: "Cybersecurity",
+    title: "Psychological Defenses in Cyberspace: Unveiling the Significance of Cognitive Shields in Cybersecurity",
+    venue: "International Journal of Advanced Networking and Applications, 16(1), 6291–6295",
+    year: 2024,
+    tags: ["Cyber Psychology", "Cognitive Security"],
+    category: "Journal",
+    link: "https://doi.org/10.35444/IJANA.2024.16108",
   },
   {
-    title: "Multilingual Named Entity Recognition for Low-Resource South Asian Languages",
-    venue: "ACL Findings",
-    year: 2023,
-    tags: ["NER", "Low-resource NLP", "Multilingual"],
-    category: "NLP",
+    title: "A Disruptive Ransomware: Its Impersonation Process, Identification and Avoidance",
+    venue: "International Journal of Multidisciplinary Research and Growth Evaluation, 6, 238–245",
+    year: 2025,
+    tags: ["Ransomware", "Malware"],
+    category: "Journal",
+    link: SCHOLAR_URL,
   },
   {
-    title: "Cross-lingual Transfer Learning for Hate Speech Detection in Code-Switched Text",
-    venue: "EMNLP Workshop on Multilingual Representation Learning",
+    title: "Methods for Restricting Unwanted Access on the Networks Using Firewall",
+    venue: "International Journal of Advanced Research in Innovative Discoveries in Engineering and Applications, 7(2), 40–47",
     year: 2022,
-    tags: ["Hate Speech", "Code-switching", "Transfer Learning"],
-    category: "NLP",
+    tags: ["Firewall", "Network Security"],
+    category: "Journal",
+    link: SCHOLAR_URL,
   },
   {
-    title: "Towards Trustworthy AI in Cybersecurity: Principles, Frameworks and Open Challenges",
-    venue: "ACM Computing Surveys",
+    title: "Network Security Attacks and Techniques to Secure the Networks",
+    venue: "International Journal of Advanced Research in Innovative Discoveries in Engineering and Applications, 7(2), 40–47",
     year: 2022,
-    tags: ["Trustworthy AI", "Survey", "Cybersecurity"],
-    category: "AI",
+    tags: ["Network Security", "Attacks"],
+    category: "Journal",
+    link: SCHOLAR_URL,
   },
   {
-    title: "SHAP-Based Interpretability for Network Intrusion Detection Systems",
-    venue: "IEEE Symposium on Security and Privacy (Workshop)",
+    title: "Cybersecurity Threats and Mitigation Strategies in Agriculture 4.0 and 5.0: Challenges and Solutions in the Digital Transformation of Agriculture",
+    venue: "JPAS, 24, 15–32",
+    year: 2024,
+    tags: ["Cybersecurity", "Smart Agriculture"],
+    category: "Journal",
+    link: SCHOLAR_URL,
+  },
+  {
+    title: "Next Generation Firewall and Self Authentication for Network Security",
+    venue: "Proceedings of the 7th International Conference on Image Information Processing (ICIIP), Solan, India, pp. 707–713, IEEE",
+    year: 2023,
+    tags: ["Firewall", "Network Security", "Authentication"],
+    category: "Conference",
+    link: "https://doi.org/10.1109/ICIIP61524.2023.10537758",
+  },
+  {
+    title: "Artificial Intelligence-Based Dataset Optimization to Strengthen Malware Classification Frameworks",
+    venue: "Proceedings of the 8th International Conference on Image Information Processing (ICIIP), Solan, India, pp. 107–111, IEEE",
+    year: 2025,
+    tags: ["Dataset Optimisation", "Malware Classification"],
+    category: "Conference",
+    link: "https://doi.org/10.1109/ICIIP68302.2025.11346139",
+  },
+  {
+    title: "Harnessing Artificial Intelligence for Data Preprocessing to Improve Malware Detection Accuracy",
+    venue: "Proceedings of the 2nd Global AI Summit — ICAIET, Noida, India, pp. 1156–1161, IEEE",
+    year: 2025,
+    tags: ["Data Preprocessing", "Malware Detection"],
+    category: "Conference",
+    link: "https://doi.org/10.1109/AISummit66170.2025.11411213",
+  },
+  {
+    title: "Optimizing Malware Detection Through Systematic Data Preprocessing Techniques for Robust Machine Learning Models",
+    venue: "Springer Nature conference proceedings (accepted)",
+    year: 2025,
+    tags: ["Preprocessing", "Machine Learning"],
+    category: "Conference",
+    link: SCHOLAR_URL,
+  },
+  {
+    title: "AI-Based Malware Detection Frameworks: A Comprehensive Review of Adaptive and Explainable Techniques",
+    venue: "Scopus-indexed conference proceedings (accepted)",
+    year: 2025,
+    tags: ["Review", "Explainable AI"],
+    category: "Conference",
+    link: SCHOLAR_URL,
+  },
+  {
+    title: "Two-Phase Framework for Lemma Identification in Low-Resource Languages",
+    venue: "Conference proceedings, National Institute of Technology Jalandhar (accepted)",
+    year: 2026,
+    tags: ["Multilingual NLP", "Low-resource", "Lemmatization"],
+    category: "Conference",
+    link: SCHOLAR_URL,
+  },
+  {
+    title: "Artificial Intelligence and Machine Learning in Factories of the Future",
+    venue: "Factories of the Future: Technological Advancements in the Manufacturing Industry, Scrivener Publishing, Wiley",
+    year: 2023,
+    tags: ["AI", "Manufacturing"],
+    category: "Book Chapter",
+    link: SCHOLAR_URL,
+  },
+  {
+    title: "Role of Robots in the Smart Agriculture System",
+    venue: "Role of Artificial Intelligence and Automation in Modern Age Agriculture, Vol. 1, Gurmehar Publication",
     year: 2022,
-    tags: ["SHAP", "IDS", "XAI"],
-    category: "AI",
+    tags: ["Robotics", "Smart Agriculture"],
+    category: "Book Chapter",
+    link: SCHOLAR_URL,
   },
   {
-    title: "Multi-task Learning for Joint Sentiment and Aspect Classification in Multilingual Reviews",
-    venue: "NAACL",
-    year: 2021,
-    tags: ["Multi-task", "Sentiment", "Multilingual"],
-    category: "NLP",
+    title: "Machine Learning in Modern Agriculture",
+    venue: "Role of Artificial Intelligence and Automation in Modern Age Agriculture, Vol. 1, Gurmehar Publication",
+    year: 2022,
+    tags: ["Machine Learning", "Agriculture"],
+    category: "Book Chapter",
+    link: SCHOLAR_URL,
+  },
+  {
+    title: "Drones in Agriculture: A Comprehensive Review",
+    venue: "Role of Artificial Intelligence and Automation in Modern Age Agriculture, Vol. 2, Gurmehar Publication",
+    year: 2023,
+    tags: ["Drones", "Agriculture", "Review"],
+    category: "Book Chapter",
+    link: SCHOLAR_URL,
   },
 ];
 
-const categories = ["All", "AI", "Cybersecurity", "NLP"];
+const categories = ["All", "Journal", "Conference", "Book Chapter"];
 
 function useInView(ref: React.RefObject<Element>) {
   const [visible, setVisible] = useState(false);
@@ -74,9 +156,9 @@ function useInView(ref: React.RefObject<Element>) {
 }
 
 const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
-  AI: { bg: "#F5F3FF", text: "#7C3AED", border: "#7C3AED22" },
-  Cybersecurity: { bg: "#EFF6FF", text: "#1E40AF", border: "#1E40AF22" },
-  NLP: { bg: "#F0FDFA", text: "#0F766E", border: "#0F766E22" },
+  Journal: { bg: "#EFF6FF", text: "#1E40AF", border: "#1E40AF22" },
+  Conference: { bg: "#F5F3FF", text: "#7C3AED", border: "#7C3AED22" },
+  "Book Chapter": { bg: "#F0FDFA", text: "#0F766E", border: "#0F766E22" },
 };
 
 export function Publications() {
@@ -225,12 +307,15 @@ export function Publications() {
                     ))}
                   </div>
                 </div>
-                <button
+                <a
+                  href={pub.link}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity p-2 rounded-lg hover:bg-slate-50"
                   aria-label="View publication"
                 >
                   <ExternalLink size={15} color="#64748B" />
-                </button>
+                </a>
               </motion.div>
             );
           })}

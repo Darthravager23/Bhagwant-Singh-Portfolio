@@ -2,19 +2,19 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 
 const cybersecItems = [
-  { label: "Malware Detection", detail: "Static & Dynamic Analysis" },
+  { label: "Malware Detection", detail: "Hybrid Static & Dynamic Analysis" },
   { label: "Explainable AI", detail: "Interpretable Security Models" },
-  { label: "Adversarial ML", detail: "Robustness under Attack" },
-  { label: "Security Analytics", detail: "Threat Intelligence Pipelines" },
-  { label: "Static-Dynamic Analysis", detail: "Hybrid Malware Frameworks" },
+  { label: "Adversarial ML", detail: "Evasion Attacks & Defences" },
+  { label: "Security Analytics", detail: "EMBER, VirusShare, MalwareBazaar Datasets" },
+  { label: "Intrusion Detection", detail: "ML-Based Network Traffic Analysis" },
 ];
 
 const nlpItems = [
-  { label: "Multilingual Resources", detail: "Annotated Language Corpora" },
-  { label: "Transformer Models", detail: "BERT & Beyond" },
-  { label: "Low-resource Languages", detail: "Global Language Equity" },
-  { label: "Multi-task Systems", detail: "Joint Learning Architectures" },
-  { label: "Cross-lingual Transfer", detail: "Zero-shot Generalisation" },
+  { label: "Multilingual Datasets", detail: "18,000+ Annotated Sentences" },
+  { label: "Transformer Models", detail: "XLM-RoBERTa & MuRIL" },
+  { label: "Low-Resource Languages", detail: "10+ Indian Languages" },
+  { label: "Shallow Parsing", detail: "POS, Chunking, NER, Vibhakti Detection" },
+  { label: "FastAPI Deployment", detail: "Internal Inference Service" },
 ];
 
 function useInView(ref: React.RefObject<Element>) {
@@ -87,7 +87,7 @@ export function ResearchImpact() {
                   Cybersecurity Research
                 </div>
                 <div style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", color: "#64748B" }}>
-                  AI-driven threat intelligence & malware analysis
+                  AI-driven malware detection & explainable cybersecurity
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ export function ResearchImpact() {
                   Language Technologies
                 </div>
                 <div style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", color: "#64748B" }}>
-                  Multilingual NLP & transformer architectures
+                  Multilingual NLP for low-resource Indian languages
                 </div>
               </div>
             </div>

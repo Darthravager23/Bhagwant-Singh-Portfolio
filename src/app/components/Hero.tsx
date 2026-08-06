@@ -3,12 +3,12 @@ import { ArrowRight, MapPin } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const researchTags = [
+  "Malware Detection",
   "Explainable AI",
   "Adversarial ML",
-  "Malware Detection",
   "Multilingual NLP",
-  "Trustworthy AI",
   "Security Analytics",
+  "Network Security",
 ];
 
 export function Hero() {
@@ -39,7 +39,7 @@ export function Hero() {
               letterSpacing: "0.12em",
             }}
           >
-            About the Researcher
+            AI &middot; Cybersecurity &middot; Multilingual NLP
           </div>
 
           <h1
@@ -65,7 +65,7 @@ export function Hero() {
               color: "#1E40AF",
             }}
           >
-            Assistant Professor &amp; International Researcher
+            Assistant Professor | Ph.D. Scholar | AI & Cybersecurity Researcher
           </div>
 
           <div
@@ -77,7 +77,7 @@ export function Hero() {
             }}
           >
             <MapPin size={13} />
-            AI · Cybersecurity · NLP
+            Shivalik University, Dehradun &middot; Punjabi University, Patiala
           </div>
 
           <div
@@ -90,16 +90,18 @@ export function Hero() {
             }}
           >
             <p>
-              International researcher whose work bridges artificial
-              intelligence, cybersecurity, and natural language processing —
-              building systems that are secure, interpretable, and globally
-              applicable.
+              I am an Assistant Professor of Computer Science and Engineering
+              at Shivalik University and a Ph.D. Scholar at Punjabi
+              University, Patiala. My research focuses on AI-driven malware
+              detection, explainable cybersecurity, adversarial machine
+              learning, security analytics, and multilingual NLP for
+              low-resource Indian languages.
             </p>
             <p>
-              Specializing in explainable malware detection, multilingual NLP
-              for low-resource languages, and adversarial robustness, with
-              research recognised through government-funded grants and IEEE
-              publications.
+              Previously, I served as a Senior Computer Scientist on the
+              MeitY-funded BHASHINI initiative, developing multilingual
+              datasets, transformer-based models, and language-technology
+              pipelines for more than ten low-resource Indian languages.
             </p>
           </div>
 
@@ -123,7 +125,7 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-3">
             <button
-              onClick={() => scrollTo("#publications")}
+              onClick={() => scrollTo("#research")}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-sm transition-all hover:opacity-90"
               style={{
                 background: "#0F172A",
@@ -132,11 +134,11 @@ export function Hero() {
                 fontWeight: 500,
               }}
             >
-              View Publications
+              Explore My Research
               <ArrowRight size={15} />
             </button>
             <button
-              onClick={() => scrollTo("#collaborations")}
+              onClick={() => scrollTo("#publications")}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-sm transition-all"
               style={{
                 background: "transparent",
@@ -152,8 +154,30 @@ export function Hero() {
                 (e.currentTarget.style.borderColor = "rgba(15,23,42,0.2)")
               }
             >
-              Research Collaborations
+              View Publications
             </button>
+            <a
+              href="/Bhagwant_Singh_CV_Latest.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-sm transition-all"
+              style={{
+                background: "transparent",
+                color: "#0F172A",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: 500,
+                border: "1.5px solid rgba(15,23,42,0.2)",
+                textDecoration: "none",
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.borderColor = "#0F172A")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.borderColor = "rgba(15,23,42,0.2)")
+              }
+            >
+              Download CV
+            </a>
           </div>
         </motion.div>
 

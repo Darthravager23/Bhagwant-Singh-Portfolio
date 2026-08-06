@@ -7,36 +7,41 @@ const verticalStats = [
     label: "Publications",
     desc: "Peer-reviewed research papers",
   },
-  { value: "37+", label: "Citations", desc: "Academic citations worldwide" },
+  { value: "39", label: "Citations", desc: "Google Scholar citations" },
   { value: "h-4", label: "h-index", desc: "Research impact index" },
-  { value: "10+", label: "Languages", desc: "NLP systems developed" },
+  { value: "10+", label: "Languages", desc: "Low-resource NLP systems developed" },
 ];
 
 const timeline = [
   {
-    year: "2018–2020",
-    title: "AI Research Foundations",
-    desc: "Established research direction in machine learning and deep learning for security applications.",
+    year: "2019–2020",
+    title: "Applied Cybersecurity Foundations",
+    desc: "Research Assistant at FlipFlop InfoSec Labs — penetration testing, vulnerability assessment, firewall configuration and intrusion-detection tuning.",
   },
   {
-    year: "2020–2021",
-    title: "Malware Analytics",
-    desc: "Developed static-dynamic analysis frameworks for intelligent malware classification and detection.",
+    year: "2020–2022",
+    title: "M.Tech in Computer Science & Engineering",
+    desc: "Punjabi University, Patiala (CGPA 9.53) — academic focus on cybersecurity, malware analysis, network security and artificial intelligence.",
   },
   {
-    year: "2021–2022",
-    title: "Explainable AI",
-    desc: "Pioneered XAI methodologies for transparent cybersecurity systems, enabling interpretable threat analysis.",
-  },
-  {
-    year: "2022–2023",
-    title: "Multilingual NLP",
-    desc: "Expanded research to low-resource language technologies and multilingual transformer architectures.",
+    year: "2022–2024",
+    title: "Academic Teaching & Curriculum",
+    desc: "Assistant Professor at Universal College, Patran — teaching computer networks, AI, machine learning, network security and deep learning.",
   },
   {
     year: "2023–Present",
-    title: "Trustworthy AI Systems",
-    desc: "Integrating adversarial robustness, fairness, and accountability into next-generation AI security frameworks.",
+    title: "Ph.D. in AI-Driven Malware Detection",
+    desc: "Punjabi University, Patiala — hybrid static–dynamic analysis, feature optimisation and explainable machine learning for malware classification.",
+  },
+  {
+    year: "2024–2026",
+    title: "Senior Computer Scientist, MeitY BHASHINI",
+    desc: "HIMANGY project — multi-task transformer shallow-parsing models (XLM-RoBERTa, MuRIL) developed for 10+ low-resource Indian languages.",
+  },
+  {
+    year: "2026–Present",
+    title: "Assistant Professor, Shivalik University",
+    desc: "Department of Computer Science and Engineering, Dehradun — teaching and research in AI, cybersecurity and network security.",
   },
 ];
 

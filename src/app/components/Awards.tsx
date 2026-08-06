@@ -5,27 +5,15 @@ import { Award } from "lucide-react";
 const awards = [
   {
     title: "Best Paper Award",
-    org: "IEEE International Conference on Cybersecurity and Privacy",
-    year: "2023",
-    desc: "Awarded for outstanding contribution to AI-driven malware detection research, recognising novel methodology and significant impact on the cybersecurity community.",
+    org: "5th International Conference on Smart Systems: Innovations in Computing",
+    year: "2025",
+    desc: "Awarded for the paper \"Optimizing Malware Detection: Effective Pre-Processing Techniques for Enhanced Dataset Preparation,\" recognising its contribution to malware-detection dataset preparation methodology.",
   },
   {
-    title: "Government Research Grant",
-    org: "Ministry of Science and ICT, Republic of Korea",
-    year: "2022",
-    desc: "Competitive national research funding supporting work on explainable AI for cybersecurity systems — one of 12 international recipients.",
-  },
-  {
-    title: "Outstanding Reviewer Award",
-    org: "IEEE Transactions on Information Forensics and Security",
-    year: "2022",
-    desc: "Recognised for exemplary peer review contributions, consistently providing thorough and constructive evaluations to the research community.",
-  },
-  {
-    title: "Doctoral Excellence Award",
-    org: "Faculty of Computing, University of Technology",
-    year: "2021",
-    desc: "Awarded to doctoral researchers demonstrating exceptional promise in both research impact and interdisciplinary collaboration.",
+    title: "Registered Industrial Design",
+    org: "Government of India",
+    year: "Registered",
+    desc: "One industrial design registered with the Government of India, recognising an original contribution developed through applied research work.",
   },
 ];
 

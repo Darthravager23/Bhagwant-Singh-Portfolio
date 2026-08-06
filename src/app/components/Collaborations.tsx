@@ -3,52 +3,76 @@ import { AnimatePresence, motion } from "motion/react";
 
 const collaborations = [
   {
-    name: "MIT CSAIL",
-    full: "Massachusetts Institute of Technology — Computer Science & AI Lab",
-    note: "Joint research on adversarial robustness in deep learning systems",
-    region: "North America",
+    name: "IIIT Hyderabad",
+    full: "International Institute of Information Technology, Hyderabad",
+    note: "Multilingual dataset development under the BHASHINI HIMANGY project",
+    region: "India",
   },
   {
-    name: "Oxford Internet Institute",
-    full: "University of Oxford",
-    note: "Collaborative work on multilingual NLP and digital language equity",
-    region: "Europe",
+    name: "NIT Patna",
+    full: "National Institute of Technology, Patna",
+    note: "Language-technology pipeline research and evaluation",
+    region: "India",
   },
   {
-    name: "IIT Delhi",
-    full: "Indian Institute of Technology Delhi",
-    note: "Low-resource NLP for South Asian languages and cross-lingual transfer",
-    region: "Asia",
+    name: "CDAC Delhi",
+    full: "Centre for Development of Advanced Computing, Delhi",
+    note: "Shallow-parsing model development for low-resource languages",
+    region: "India",
   },
   {
-    name: "ETH Zürich",
-    full: "Swiss Federal Institute of Technology",
-    note: "Formal verification methods for AI security model robustness",
-    region: "Europe",
+    name: "CDAC Noida",
+    full: "Centre for Development of Advanced Computing, Noida",
+    note: "Multilingual NLP pipeline coordination under BHASHINI",
+    region: "India",
   },
   {
-    name: "KAUST",
-    full: "King Abdullah University of Science & Technology",
-    note: "Arabic NLP resources and multilingual security analytics",
-    region: "Middle East",
+    name: "CDAC Bangalore",
+    full: "Centre for Development of Advanced Computing, Bangalore",
+    note: "Transformer-based language-model deployment support",
+    region: "India",
   },
   {
-    name: "NIST",
-    full: "National Institute of Standards and Technology",
-    note: "Standards development for explainable AI in critical infrastructure",
-    region: "North America",
+    name: "IIIT Bhubaneswar",
+    full: "International Institute of Information Technology, Bhubaneswar",
+    note: "Annotation and evaluation for multi-task shallow parsing",
+    region: "India",
   },
   {
-    name: "Alan Turing Institute",
-    full: "UK National Institute for AI & Data Science",
-    note: "Research exchange on trustworthy AI frameworks and governance",
-    region: "Europe",
+    name: "MIT",
+    full: "BHASHINI Network Collaborating Institution",
+    note: "Joint work on multilingual dataset curation and annotation",
+    region: "India",
   },
   {
-    name: "CNU",
-    full: "Chungnam National University, South Korea",
-    note: "Government-funded research on AI-driven malware detection",
-    region: "Asia",
+    name: "GCW Jammu",
+    full: "Government College for Women, Jammu",
+    note: "Linguistic annotation for low-resource Indian languages",
+    region: "India",
+  },
+  {
+    name: "University of Kashmir",
+    full: "University of Kashmir",
+    note: "Language-resource development for the BHASHINI initiative",
+    region: "India",
+  },
+  {
+    name: "DA-IICT",
+    full: "Dhirubhai Ambani Institute of Information and Communication Technology",
+    note: "Multi-task transformer training and evaluation collaboration",
+    region: "India",
+  },
+  {
+    name: "IIT Patna",
+    full: "Indian Institute of Technology, Patna",
+    note: "Research coordination on multilingual shallow-parsing models",
+    region: "India",
+  },
+  {
+    name: "University of the Punjab",
+    full: "University of the Punjab, Lahore",
+    note: "Cross-institutional collaboration on Punjabi language technology",
+    region: "South Asia",
   },
 ];
 
@@ -118,7 +142,7 @@ export function Collaborations() {
               letterSpacing: "0.12em",
             }}
           >
-            Global Partnerships
+            MeitY BHASHINI Initiative
           </div>
           <h2
             style={{
@@ -129,7 +153,7 @@ export function Collaborations() {
               letterSpacing: "-0.02em",
             }}
           >
-            International Collaborations
+            Collaborating Institutions
           </h2>
         </motion.div>
 

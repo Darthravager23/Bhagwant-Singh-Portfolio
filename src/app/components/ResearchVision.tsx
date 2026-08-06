@@ -5,21 +5,21 @@ import { Layers, Shield, Globe } from "lucide-react";
 const cards = [
   {
     icon: Layers,
-    title: "Explainable Malware Intelligence",
-    desc: "Developing layered neural architectures that provide human-interpretable explanations for malware classification decisions, enabling security teams to understand, trust, and act on AI-driven threat intelligence.",
-    tag: "XAI · Deep Learning",
+    title: "AI-Based Malware Detection",
+    desc: "Developing intelligent classification frameworks that integrate static and dynamic feature representations to identify known, evolving, and previously unseen malware with high reliability.",
+    tag: "Hybrid Analysis · Deep Learning",
   },
   {
     icon: Shield,
-    title: "Adversarially Robust AI",
-    desc: "Building AI systems that remain reliable under adversarial pressure — investigating attack vectors, crafting defenses, and validating security models against real-world threat landscapes.",
-    tag: "Adversarial ML · Robustness",
+    title: "Explainable & Adversarially Robust AI",
+    desc: "Investigating adversarial attacks, evasion techniques and defence mechanisms, while building interpretable models that give security analysts transparent, trustworthy detection decisions.",
+    tag: "Explainable AI · Adversarial ML",
   },
   {
     icon: Globe,
     title: "Multilingual Security Analytics",
-    desc: "Creating language-agnostic NLP pipelines and transformer models that enable security intelligence to operate effectively across linguistic boundaries, addressing low-resource language challenges.",
-    tag: "NLP · Global Systems",
+    desc: "Applying multilingual transformer models such as XLM-RoBERTa and MuRIL to linguistic analysis and security intelligence, addressing low-resource Indian language challenges.",
+    tag: "Transformer NLP · Low-Resource Languages",
   },
 ];
 
@@ -63,7 +63,7 @@ export function ResearchVision() {
               lineHeight: 1.2,
             }}
           >
-            Building the Next Generation of Intelligent Security Systems
+            Advancing Interpretable AI for Cybersecurity and Language Technologies
           </h2>
         </motion.div>
 
