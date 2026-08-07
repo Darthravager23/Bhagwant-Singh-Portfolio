@@ -69,10 +69,10 @@ const collaborations = [
     region: "India",
   },
   {
-    name: "University of the Punjab",
-    full: "University of the Punjab, Lahore",
+    name: "Punjabi University",
+    full: "Punjabi University, Patiala",
     note: "Cross-institutional collaboration on Punjabi language technology",
-    region: "South Asia",
+    region: "India",
   },
 ];
 
@@ -166,8 +166,12 @@ export function Collaborations() {
               transition={{ duration: 0.45, delay: i * 0.05 }}
               className="rounded-xl border bg-white cursor-default"
               style={{
-                borderColor: hoveredIdx === i ? "rgba(30,64,175,0.4)" : "rgba(15,23,42,0.08)",
-                boxShadow: hoveredIdx === i ? "0 4px 16px rgba(30,64,175,0.10)" : "none",
+                borderColor:
+                  hoveredIdx === i
+                    ? "rgba(30,64,175,0.4)"
+                    : "rgba(15,23,42,0.08)",
+                boxShadow:
+                  hoveredIdx === i ? "0 4px 16px rgba(30,64,175,0.10)" : "none",
                 transition: "border-color 0.2s, box-shadow 0.2s",
               }}
               onMouseEnter={() => setHoveredIdx(i)}
@@ -176,18 +180,33 @@ export function Collaborations() {
               <div className="p-5">
                 <div
                   className="mb-1"
-                  style={{ fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: "1rem", color: "#0F172A" }}
+                  style={{
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 700,
+                    fontSize: "1rem",
+                    color: "#0F172A",
+                  }}
                 >
                   {col.name}
                 </div>
                 <div
-                  style={{ fontFamily: "Inter, sans-serif", fontSize: "0.72rem", color: "#64748B", lineHeight: 1.4 }}
+                  style={{
+                    fontFamily: "Inter, sans-serif",
+                    fontSize: "0.72rem",
+                    color: "#64748B",
+                    lineHeight: 1.4,
+                  }}
                 >
                   {col.full}
                 </div>
                 <div
                   className="mt-2 text-xs px-2 py-0.5 rounded-full inline-block"
-                  style={{ background: "#EFF6FF", color: "#1E40AF", fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+                  style={{
+                    background: "#EFF6FF",
+                    color: "#1E40AF",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 500,
+                  }}
                 >
                   {col.region}
                 </div>

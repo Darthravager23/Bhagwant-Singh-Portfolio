@@ -17,11 +17,7 @@ export function Hero() {
   };
 
   return (
-    <section
-      id="hero"
-      className="pt-16"
-      style={{ background: "#FAFAFA" }}
-    >
+    <section id="hero" className="pt-16" style={{ background: "#FAFAFA" }}>
       <div className="max-w-[1280px] mx-auto w-full px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center py-8 lg:py-12">
         {/* Left — About */}
         <motion.div
@@ -90,12 +86,11 @@ export function Hero() {
             }}
           >
             <p>
-              I am an Assistant Professor of Computer Science and Engineering
-              at Shivalik University and a Ph.D. Scholar at Punjabi
-              University, Patiala. My research focuses on AI-driven malware
-              detection, explainable cybersecurity, adversarial machine
-              learning, security analytics, and multilingual NLP for
-              low-resource Indian languages.
+              I am an Assistant Professor of Computer Science and Engineering at
+              Shivalik University and a Ph.D. Scholar at Punjabi University,
+              Patiala. My research focuses on AI-driven malware detection,
+              explainable cybersecurity, adversarial machine learning, security
+              analytics, and multilingual NLP for low-resource Indian languages.
             </p>
             <p>
               Previously, I served as a Senior Computer Scientist on the
@@ -204,16 +199,26 @@ export function Hero() {
               }}
             >
               <ImageWithFallback
-                src="/mobilwprofileimage.png"
+                src="/profileimage.jpeg"
                 alt="Bhagwant Singh"
                 className="block lg:hidden"
-                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                }}
               />
               <ImageWithFallback
-                src="/profileimage.png"
+                src="/profileimage.jpeg"
                 alt="Bhagwant Singh"
                 className="hidden lg:block"
-                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                }}
               />
             </div>
           </div>
