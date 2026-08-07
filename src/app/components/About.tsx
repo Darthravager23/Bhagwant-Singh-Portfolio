@@ -15,7 +15,7 @@ const verticalStats = [
 const timeline = [
   {
     year: "2019–2020",
-    title: "Applied Cybersecurity Foundations",
+    title: "Applied Cybersecurity Foundations(Ooptional)",
     desc: "Research Assistant at FlipFlop InfoSec Labs — penetration testing, vulnerability assessment, firewall configuration and intrusion-detection tuning.",
   },
   {
