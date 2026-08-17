@@ -7,9 +7,13 @@ const verticalStats = [
     label: "Publications",
     desc: "Peer-reviewed research papers",
   },
-  { value: "39", label: "Citations", desc: "Google Scholar citations" },
-  { value: "h-4", label: "h-index", desc: "Research impact index" },
-  { value: "10+", label: "Languages", desc: "Low-resource NLP systems developed" },
+  { value: "41", label: "Citations", desc: "Google Scholar citations" },
+  { value: "h-5", label: "h-index", desc: "Research impact index" },
+  {
+    value: "10+",
+    label: "Languages",
+    desc: "Low-resource NLP systems developed",
+  },
 ];
 
 const timeline = [

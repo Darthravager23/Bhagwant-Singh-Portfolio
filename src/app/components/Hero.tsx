@@ -152,7 +152,7 @@ export function Hero() {
               View Publications
             </button>
             <a
-              href="/Bhagwant_Singh_CV_Latest.pdf"
+              href="/Bhagwant_Singh_CV.pdf"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-sm transition-all"
